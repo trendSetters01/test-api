@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Interaction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Interact with the API</h1>
+    
+    <!-- For Address Details -->
+    <div>
+        <h2>Fetch Address Details:</h2>
+        <input type="text" id="addressInput" placeholder="Enter Address">
+        <button onclick="fetchAddressDetails()">Fetch</button><button onclick="resetField('addressInput', 'addressDetails')">Reset</button>
+        <pre id="addressDetails"></pre>
+    </div>
+
+    <!-- For Block Details -->
+    <div>
+        <h2>Fetch Block Details:</h2>
+        <input type="text" id="blockInput" placeholder="Enter Round">
+        <button onclick="fetchBlockDetails()">Fetch</button><button onclick="resetField('blockInput', 'blockDetails')">Reset</button>
+        <pre id="blockDetails"></pre>
+    </div>
+
+    <!-- For Transaction Details -->
+    <div>
+        <h2>Fetch Transaction Details:</h2>
+        <input type="text" id="transactionInput" placeholder="Enter txid">
+        <button onclick="fetchTransactionDetails()">Fetch</button><button onclick="resetField('transactionInput', 'transactionDetails')">Reset</button>
+        <pre id="transactionDetails"></pre>
+    </div>
+
+    <!-- For Asset Details -->
+    <div>
+        <h2>Fetch Asset Details:</h2>
+        <input type="text" id="assetInput" placeholder="Enter Asset ID">
+        <button onclick="fetchAssetDetails()">Fetch</button><button onclick="resetField('assetInput', 'assetDetails')">Reset</button>
+        <pre id="assetDetails"></pre>
+    </div>
+
+    <!-- For Application Details -->
+    <div>
+        <h2>Fetch Application Details:</h2>
+        <input type="text" id="appInput" placeholder="Enter App ID">
+        <button onclick="fetchApplicationDetails()">Fetch</button><button onclick="resetField('appInput', 'appDetails')">Reset</button>
+        <pre id="appDetails"></pre>
+    </div>
+
+    <!-- For Ledger Supply -->
+    <div>
+        <h2>Fetch Ledger Supply:</h2>
+        <button onclick="fetchLedgerSupply()">Fetch</button>
+        <pre id="ledgerSupply"></pre>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+    <!-- For All Transactions By Address -->
+    <div>
+        <h2>Fetch All Transactions By Address:</h2>
+        <input type="text" id="allTransactionsInput" placeholder="Enter Address">
+        <button onclick="fetchAllTransactionsByAddress()">Fetch</button><button onclick="resetField('allTransactionsInput', 'allTransactionsDetails')">Reset</button>
+        <pre id="allTransactionsDetails"></pre>
+    </div>
